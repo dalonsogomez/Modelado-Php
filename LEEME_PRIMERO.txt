@@ -1,0 +1,220 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    DOCUMENTACIÓN COMPLETA - MODELADO PHP                     ║
+║                   Guía de Estudio para Exámenes de IWP                       ║
+╔══════════════════════════════════════════════════════════════════════════════╗
+
+📚 ARCHIVOS PRINCIPALES:
+
+1. DOCUMENTACION_COMPLETA.pdf (165 KB) ⭐ ⭐ ⭐
+   └─ ESTE ES EL ARCHIVO MÁS IMPORTANTE
+   └─ Contiene TODA la documentación del proyecto
+   └─ Incluye diagramas, código comentado y guías de examen
+   └─ Formato profesional listo para imprimir
+
+2. DOCUMENTACION_COMPLETA.md (67 KB)
+   └─ Versión Markdown de la documentación
+   └─ Útil para editar o copiar código
+
+3. README.md
+   └─ Resumen del proyecto y guía de uso
+   └─ Índice de contenidos
+
+4. ENUNCIADOS.md (14 KB)
+   └─ Enunciados de exámenes anteriores
+   └─ Formato y requisitos oficiales
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📖 CONTENIDO DE LA DOCUMENTACIÓN (10 SECCIONES):
+
+1. INTRODUCCIÓN Y CONFIGURACIÓN DEL ENTORNO
+   - Instalación de XAMPP
+   - Configuración de NetBeans IDE
+   - Uso de phpMyAdmin
+   - Estructura del proyecto
+
+2. ESTRUCTURA DEL PROYECTO
+   - Listado de archivos con descripción
+   - Tecnologías utilizadas
+   - Características técnicas
+
+3. ARQUITECTURA Y MAPA DE DEPENDENCIAS
+   - Diagrama de dependencias completo
+   - Flujo de datos principal
+   - Arquitectura en capas
+   - Mapa de sesiones
+
+4. DOCUMENTACIÓN DETALLADA DE ARCHIVOS
+   - conexion_bd.php: Conexión a MySQL
+   - index.php: Sistema de login
+   - form_alta.php: Registro de alumnos
+   - menu_principal.php: Menú de navegación
+   - registro.php: Registro con imágenes
+   - inicio.php: Gestión de libros
+   - reservas.php: Sistema de reservas
+
+5. DIAGRAMAS DE FLUJO (Mermaid.js)
+   - Flujo completo del sistema de login
+   - Flujo de registro de alumno
+   - Flujo de subida de archivo
+   - Flujo de validación de formulario
+
+6. BASE DE DATOS
+   - Esquema de la BD "escuela"
+   - Tabla alumnos documentada
+   - Consultas SQL comunes
+   - Datos de ejemplo
+
+7. GUÍA DE ESTUDIO PARA EXÁMENES ⭐
+   - Formato de examen
+   - Ejemplo completo: Gestión de Gimnasio
+     • Paso 1: Diseño de BD en phpMyAdmin
+     • Paso 2: Archivo de conexión
+     • Paso 3: Pantalla de identificación
+     • Paso 4: Selección de actividad
+     • Paso 5: Confirmación
+   - Checklist para el examen
+
+8. PROCESO DE DESARROLLO PASO A PASO
+   - Configuración inicial del proyecto
+   - Creación de base de datos
+   - Patrón de archivo PHP completo
+
+9. PATRONES Y MEJORES PRÁCTICAS
+   - Validación de formularios
+   - Manejo seguro de archivos
+   - Protección de rutas
+   - Queries seguras con Prepared Statements
+
+10. TROUBLESHOOTING Y ERRORES COMUNES
+    - Errores de PHP
+    - Errores de MySQL
+    - Errores de subida de archivos
+    - Checklist de depuración
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 CÓMO PREPARAR UN EXAMEN:
+
+FASE 1: ESTUDIO (Antes del examen)
+  □ Lee DOCUMENTACION_COMPLETA.pdf completo
+  □ Estudia el ejemplo del gimnasio (Sección 7.2)
+  □ Practica las validaciones con regex
+  □ Repasa funciones MySQLi
+  □ Revisa diagramas de flujo
+
+FASE 2: PRÁCTICA
+  □ Implementa el ejemplo del gimnasio desde cero
+  □ Practica subida de archivos
+  □ Crea formularios con validación completa
+  □ Diseña bases de datos con relaciones
+
+FASE 3: REPASO FINAL
+  □ Revisa el checklist de examen (Sección 7.3)
+  □ Memoriza funciones PHP esenciales (Sección 10)
+  □ Repasa errores comunes y soluciones
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚡ INICIO RÁPIDO:
+
+1. Instalar XAMPP
+   └─ Descargar de https://www.apachefriends.org
+   └─ Iniciar Apache y MySQL
+
+2. Instalar NetBeans
+   └─ Descargar de https://netbeans.apache.org
+   └─ Configurar PHP
+
+3. Crear proyecto
+   └─ Copiar archivos a C:\xampp\htdocs\Modelado-Php
+   └─ Abrir en NetBeans
+
+4. Crear base de datos
+   └─ Abrir http://localhost/phpmyadmin
+   └─ Crear BD "escuela"
+   └─ Ejecutar scripts SQL de la documentación
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 DIAGRAMAS INCLUIDOS:
+
+✓ Mapa de tecnologías del proyecto
+✓ Diagrama de dependencias completo
+✓ Secuencia de autenticación
+✓ Arquitectura en capas
+✓ Flujo de login completo
+✓ Flujo de registro de alumno
+✓ Flujo de subida de archivo
+✓ Flujo de validación
+✓ Diagrama ER de base de datos
+✓ Proceso del sistema de gimnasio
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 RECURSOS CLAVE:
+
+FUNCIONES PHP ESENCIALES:
+  • mysqli_connect(), mysqli_query(), mysqli_fetch_array()
+  • session_start(), $_SESSION
+  • isset(), empty(), preg_match()
+  • move_uploaded_file(), is_uploaded_file()
+  • header(), exit()
+
+EXPRESIONES REGULARES COMUNES:
+  • Email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  • NIF: /^[0-9]{8}[A-Z]$/
+  • Teléfono: /^[0-9]{9}$/
+  • Precio: /^\d+(\.\d{1,2})?$/
+
+SQL QUERIES TÍPICAS:
+  • INSERT INTO tabla (campo1, campo2) VALUES (valor1, valor2)
+  • SELECT * FROM tabla WHERE condicion
+  • UPDATE tabla SET campo = valor WHERE condicion
+  • DELETE FROM tabla WHERE condicion
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚠️ IMPORTANTE:
+
+• La documentación está diseñada específicamente para EXÁMENES
+• Sigue el formato de ENUNCIADOS.md
+• Incluye ejemplos completos que puedes usar como plantilla
+• Todos los archivos PHP están completamente comentados
+• El PDF es el documento principal - úsalo como referencia
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 ESTRUCTURA DE EXAMEN TÍPICO:
+
+1. Diseño de BD (1 punto)
+   └─ Crear tablas con claves primarias y foráneas
+   └─ Insertar datos de prueba
+
+2. Implementación PHP (6.5 puntos)
+   └─ 2-3 pantallas con formularios
+   └─ Validaciones completas
+   └─ Procesamiento de datos
+
+3. Confirmación y consultas (2.5 puntos)
+   └─ Mostrar datos insertados
+   └─ Listados relacionados
+
+ENTREGA:
+  • Archivo .zip con nombre: inicial_apellido_codigo.zip
+  • Contiene: archivo .sql + proyecto PHP completo
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎓 ¡BUENA SUERTE EN TU EXAMEN!
+
+Para cualquier duda, consulta:
+  1. Sección 10: Troubleshooting
+  2. Diagramas de flujo en cada sección
+  3. Ejemplos comentados en archivos PHP
+
+Versión: 1.0
+Última actualización: Diciembre 2024
+Herramientas: NetBeans IDE, XAMPP, phpMyAdmin
+
+═══════════════════════════════════════════════════════════════════════════════
