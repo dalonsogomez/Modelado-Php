@@ -3,7 +3,7 @@
     
     // Verificar que el usuario esté registrado
     if(! isset($_SESSION["nombre"])){
-        header("location: registro. php");
+        header("location: registro.php");
         exit();
     }
     
@@ -89,7 +89,7 @@ LIBRO;
     function mostrar_formulario($titulo, $autor, $precio){
         $formulario = <<<FORM
             <h2>Añadir Nuevo Libro</h2>
-            <form action="inicio. php" method="post" enctype="multipart/form-data">
+            <form action="inicio.php" method="post" enctype="multipart/form-data">
                 <p>
                     Título del libro:
                     <input type="text" name="titulo" size="50" maxlength="100" value="$titulo">

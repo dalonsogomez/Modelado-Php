@@ -132,7 +132,7 @@ FORM;
                 // Validar contraseña: mínimo 8 caracteres, al menos una mayúscula, una minúscula y un número
                 if(($password == "") || (strlen($password) < 8) || (!preg_match("/[a-z]/", $password)) || (!preg_match("/[A-Z]/", $password)) || (!preg_match("/[0-9]/", $password))){
                     $flag = false;
-                    $errores . = " - La contraseña debe tener al menos 8 caracteres, incluir mayúscula, minúscula y número ";
+                    $errores .= " - La contraseña debe tener al menos 8 caracteres, incluir mayúscula, minúscula y número ";
                 }
                 
                 // Validar foto
